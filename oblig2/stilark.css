@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Bakgrunnsfargen til hele nettstedet */
+body {
+    background-color:rgb(219, 236, 236);
+    margin: 20px; 
+}
+/* Definerer hvor de ulike grid-elementene skal plasseres */
+.header {
+
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+.menu {
+
+    grid-column: 1 / 5;
+    grid-row: 2;
+    background-color:rgb(255, 166, 0);
+    
+}
+
+.main {    
+
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background-color: white;
+}
+
+.sidebar {
+    grid-column: 5;
+    grid-row: 3;
+    background-color: cornsilk;
+    
+}
+
+.footer {
+    grid-column: 1 / 5;
+    grid-row: 4;
+    background-color: rgb(185, 184, 184);
+    padding: 10px;
+
+}
+
+/* Størrelsen på alt tekstinnhold i avsnittene */
+p {
+    font-size: 1rem;
+}
+
+/* Hele container-griden */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "menu menu menu menu"  
+    "main main main sidebar"
+    "footer footer footer footer"; 
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    }
+
+
+
+/* De påfølgende "div"-ene i containeren */
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+/* Header */
+
+.grid-container > header {
+    min-height: 200px;
+    background: url(https://webdesign619.com/wp-content/uploads/2016/08/blog-header-background.jpg);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+/* Navigasjonsbaren */
+.grid-container .navbar {
+    overflow: hidden;
+   
+}
+
+/* Linkene inni navigasjonsbaren*/
+.grid-container .navbar a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 50px;
+    
+}
+.grid-container .navbar a:hover {
+    border-bottom: 1px solid black;
+}
+
+/* Svart strek under den siden man er på */
+.grid-container .navbar a.active {
+    border-bottom: 1px solid black;
+}
+
+/* Sidekolonnen */
+.grid-container .sidebar {
+    display: grid;
+    text-align: center;
+    grid-area: sidebar;
+    padding: 10px;
+}
+
+/* innholdet inni sidebaren */
+.grid-container .sidebar .sidecontent {
+    padding: 10px;
+}
+
+/* Flex-containeren på forsiden */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 300px;
+    align-items: flex-start;
+    padding: 10px;
+    grid-area: main;
+
+}
+
+/* Liste-elementet i sidebaren på forsiden */
+.liste {
+    list-style-type: none;
+    padding: 0,652rem;
+}
+
+/* Knappene i main-feltet på forsiden */
+.button {
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    padding: 2px;
+}
+
+/* Knappen i sidebaren på forsiden */
+.btn1 {
+    text-decoration: none;
+    color: white;
+    background-color:orange;
+    font-size: 16px;
+}
+
+/* Innholdet i main-taggen i artikkelsiden */
+.content {
+    padding: 10px;
+    
+}
+.figcaption {
+    font-size: 12px;
+}
+

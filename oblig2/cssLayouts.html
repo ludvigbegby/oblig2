@@ -1,0 +1,107 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS-layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stilark.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+</head>
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <h1>Min samleside - Webutvikling</h1>
+        </header>
+        
+        <div class="menu">
+            <nav class= "navbar">
+                <a href="index.html">HJEM</a>
+                <a href="github.html">GITHUB</a>
+                <a href="mediatyper.html">MEDIA TYPER</a>
+                <a class="active" href="cssLayouts.html">CSS LAYOUTS</a>
+            </nav>
+        </div>
+        
+        <main class="main">
+        
+            <article class="content">
+                <h2>CSS Layouts</h2>
+                
+              
+                <p><b>CSS-Grid</b> er det mest kraftfulle layout-systemet som er tilgjengelig i CSS. Det er et to-dimensjonelt designsystem som forandrer måten vi designer websider. CSS har vært det programmet vi har brukt for å utvikle design på nettsiden, men har aldri vært spesielt god. Begrep som float, position og inline-block er alle metoder som har i oppgave å "hacke" systemet. Og det fører med seg en god del problemer når det kommer til funksjonalitet. </p>
+                <p>For å sette i gang med CSS-grid må du aller først definere en container med dispaly:grid. Derfra setter man kolonne og rad-størrelser med grid-template-columns og grid-template-rows. "Child" elementene inni Grid-en trenger da kordinater for å kunne plasseres inn i riktige kolonner og rader. Dette gjør man ved å bruke grid-column og grid-row. </p>
+                
+                <picture class="image">
+                    <img src="print2.png" alt="grid" height="200px" width="400px">
+                    <figcaption>
+                        <p class="figcaption">Definer en container med display: grid.</p>
+                    </figcaption>
+                </picture>
+               
+                
+                
+                <p>Det som virkelig har gjort den store forskjellen for CSS-grid er hvordan man kan sette navn på ulike celler i en nettside, og plassere innholdet inn i de. Dette skjer uten å måtte bruke float-elementer eller andre metoder for å posisjonere innholdet. Ved hjelp av "grid-template-areas" kan man skrive et sideoppsett som dekker alle cellene, og plassere f.eks header, navigasjonsbar, main-område, sidebar og footer på en veldig enkel måte. </p>
+                
+                <picture class="image">
+                    <img src="print3.png" alt="grid" height="400px" width="200px">
+                    <figcaption>
+                        <p class="figcaption">Eksempel på hvordan man kan plassere innhold basert på "grid-template-areas"</p>
+                    </figcaption>
+                </picture>
+                
+                <picture class="image">
+                    <img src="print4.png" alt="grid" height="250px" width="400px">
+                    <figcaption>
+                        <p class="figcaption">Man kan til og med lage blanke celler ved å skrive et "." i grid-template-areas-området.</p>
+                    </figcaption>
+                </picture>
+              
+                
+                <br />
+                <br />
+
+                <p><b>CSS flexbox </b> er det andre store layout-systemet som er tilgjengelig i CSS. Flexbox ble utviklet for å lage en mer effektiv måte designe og distributere celler inni en container. Hovedideen bak flexbox er at man skal gi containeren muligheten til å tilegne innholdets størrelse og rekkefølge for å best fylle den tilgjengelige plassen. Flexbox passer best til å komponere mindre applikasjoner med små skalerte layouts, mens Grid er det beste for større layouts.</p>
+                
+                <picture class="image">
+                    <img src="print5.png" alt="flexbox" height="200px" width="400px">
+                    <figcaption>
+                        <p class="figcaption">Oppsett på en flex-container med 2 bokser som innhold</p>
+                    </figcaption>
+                </picture>
+
+                <p>Det er mange funksjoner i CSS-flexbox, og det aller første man må gjøre er omtrent det samme som i Grid. Man må lage en flex-container. Den skal ha display:flex eller inline-flex. Man kan her styre hvilken rekkefølge de ulike "children"-elementene skal få, hvilken retning de skal følge og størrelsen på en eller flere elementer. Ved å bruke justify-content, kan man plassere og bestemme hvor mye plass det skal være mellom elementene, rundt elementene eller bare hvor de skal starte.</p>
+                <picture class="image">
+                    <img src="print6.png" alt="justify-content" height="200px" width="400px">
+                    
+                </picture>
+
+                <p>For å lese mer om CSS-layouts og andre typer enn CSS-grid og CSS-flexbox, besøk linkene under:</p>
+                <ul>
+                    <li><a href="https://getbootstrap.com/docs/3.3/css/">www.getbootstrap.com</a></li>
+                    <li><a href="https://www.w3schools.com/Css/css_rwd_frameworks.asp">www.w3schools.com/frameworks</a></li>
+                    <li><a href="https://www.w3schools.com/Css/css_rwd_templates.asp">www.w3schools.com/templates</a></li>
+                    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">www.css-tricks.com/guide-to-flexbox</a></li>
+                    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">www.css-tricks.com/complete-guide-grid</a></li>
+                </ul>
+                
+            </article>
+        
+        </main>
+        
+        <aside class="sidebar">
+            <section>
+                <h3>Info</h3>
+                    <p>I denne oppgaven beskriver jeg de ulike metodene for Layout i CSS. Jeg har beskrevet CSS flexbox og CSS Grid, samt lagt ved linker til eldre metoder for utvikling av layouts.</p>
+                            
+            </section>
+        </aside>
+                
+        <footer class="footer">
+            <p>Ludvig Begby // ludvig.begby@hiof.no</p>
+        </footer>
+        
+    </div>
+</body>
+</html>

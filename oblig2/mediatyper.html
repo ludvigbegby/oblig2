@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Media typer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stilark.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+</head>
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <h1>Min samleside - Webutvikling</h1>
+        </header>
+        
+        <div class="menu">
+            <nav class= "navbar">
+                <a href="index.html">HJEM</a>
+                <a href="github.html">GITHUB</a>
+                <a class="active" href="mediatyper.html">MEDIA TYPER</a>
+                <a href="cssLayouts.html">CSS LAYOUTS</a>
+            </nav>
+        </div>
+        
+        <main class="main">
+        
+            <article class="content">
+                <h2>Media Typer</h2>
+
+                <p>Media typer er CSS sin spesifikasjon for skjerm. Det aller vanligste, nemlig det vi ser i formatet vi bruker til vanlig i nettsider og apper er "skjerm". Grunnen til at det finnes mange av disse er på grunn av det har vært viktig å skille mellom stilark for å tilpasse til de ulike medietypene. På den måten har innholdet kommet best mulig tilpasset til brukerens enhet.  </p>
+                <p>Som sagt finnes det mange media typer. Vi har: all, braille, embossed, handheld, print, projection, screen, speech, tty and TV for eksempel. Alle disse kan settes inn i HTML-koden for å definere hvilken enhet dette stilarket skal passe best til. Det er en av de beste måtene å bygge en printervennlig nettside, bare ved å legge til et nytt print-stilark. </p>
+                
+                <picture class="image">
+                    <img src="print.png" alt="Print" height="200px" width="400px">
+                    <figcaption>
+                        <p class="figcaption">Eksempel på hvordan implementere et print-stilark til HTML-koden</p>
+                    </figcaption>
+                </picture>
+                
+                <p>Fordelene med disse ulike mediatypene er at brukersnittet ofte blir godt ettersom stilarket er lagd for den spesifikke enheten man bruker. Skal man for eksempel printe ut en artikkel fra en nettside, får man den ut slik den skal være. Med lite design og forstyrrende elementer. Skal man vise en nettside på en prosjektor trenger man kankskje å bruke fullskjerm eller visningsmodus. Da finnes det også CSS-spesifikasjoner for prosjektor. </p>
+                <p>Teknologien utvikler seg også her, og mye av dette ovenfor er idag dødt ettersom responsivt design har tatt mer og mer over.</p>
+                
+            </article>
+        
+        </main>
+        
+        <aside class="sidebar">
+            <section>
+                <h3>Info</h3>
+                    <p>Her beskriver jeg hva Media Typer er og hvordan man bruker disse. Har også med noen fordeler og ulemper med dette, og hvorfor ikke alle Media Typer er like mye brukt som tidligere.</p>
+                            
+            </section>
+        </aside>
+                
+        <footer class="footer">
+            <p>Ludvig Begby // ludvig.begby@hiof.no</p>
+        </footer>
+        
+    </div>
+</body>
+</html>
